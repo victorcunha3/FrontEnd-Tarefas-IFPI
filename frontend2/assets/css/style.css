@@ -1,17 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.container{
+    max-width: 800px;
+    align-items: center;
+    margin: auto;
+}
+
 /* Estilos para o corpo do documento */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    font-family: 'Times New Roman';
+    background-color: #8e6c3a;
   }
   
 /* Estilos para o cabeçalho */
 header {
-    background-color: #356feb;
+    background-color: #abac82;
     color: #fff;
     padding: 10px;
-    text-align: center;
     border-radius: 5px;
+    margin: auto;
+    max-width: 800px;
+    margin-top: 20px;
+    overflow: hidden;
+    text-align: center;
+    
 }
+.exit{
+    float: right;    
+}
+
 
 /* Estilos para o formulário */
 form {
@@ -21,15 +42,16 @@ form {
     align-items: center;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #abac82;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 5px rgba(128, 103, 103, 0.3);
 }
 
 label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
+    color: #fff;
 }
 
 input,
@@ -39,15 +61,34 @@ select {
     margin-bottom: 25px;
     padding: 15px;
     border: none;
+    outline: none;
     border-radius: 5px;
     box-shadow: 0 1px 10px rgba(34, 132, 189, 0.3);
+    appearance: none;
+}
+
+
+option {
+    background-color: #f0f0f0;
+    color: #060606;
+    font-size: 16px;
+}
+option:hover {
+    background-color: #f0f0f0 !important;
+    color: #a15e1f !important;
+}
+
+/* Estilo para os option selecionados */
+option:checked {
+    background-color: #a46529;
+    color: #f0f0f0;
 }
 
 button {
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
-    background-color: #1e8cbe;
+    background-color: #795d1db9;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -57,7 +98,7 @@ button {
 }
 
 button:hover {
-background-color: #5b61bd;
+background-color: #b99758;
 }
 
 /* Estilos para a tabela */
