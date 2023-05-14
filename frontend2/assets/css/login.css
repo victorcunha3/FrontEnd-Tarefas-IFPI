@@ -6,13 +6,13 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f2f2f2;
+  font-family:  'Times New Roman';
+  background-color: #8e6c3a;
 }
 
 /* Login Form */
 .login-wrapper {
-  background-color: #fff;
+  background-color:#abac82;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   max-width: 400px;
@@ -22,7 +22,7 @@ body {
 }
 
 .login-wrapper h1 {
-  color: #333;
+  color: #ffffff;
   font-size: 36px;
   margin-top: 0;
 }
@@ -63,7 +63,7 @@ body {
 }
 
 .login-wrapper button[type="submit"] {
-  background-color: #3680c5;
+  background-color: #795d1db9;
   border: none;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -72,11 +72,11 @@ body {
   font-size: 16px;
   padding: 10px;
   transition: background-color 0.2s;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Times New Roman';
 }
 
 .login-wrapper button[type="submit"]:hover {
-  background-color: #85afcc;
+  background-color: #b99758;
 }
 
 .login-wrapper input:focus,
@@ -88,12 +88,13 @@ body {
 
 .login-wrapper a{
   text-decoration: none;
-  font-family: monospace;
-  color: #3680c5; 
+  font-family: 'Times New Roman';
+  color: #ffffff; 
   font-size: 15px;
+  margin-top: 10px;
 }
 
 
 .login-wrapper input[type="email"] {
-  background-image: url('../images/mail.png');
+  background-image: url('../images/icons8-nova-mensagem-50.png');
 }
