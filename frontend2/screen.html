@@ -12,14 +12,14 @@
 <body>
     <header>
         <h1>Tarefas</h1>
-        <button type="button" onclick="logout()">Sair</button>
+        <button class="exit" type="button" onclick="logout()">Sair</button>
     </header>
     <div class="container">
         <form>
             <label for="descricao">Descrição:</label>
-            <input type="text" placeholder="adicione uma descrição" autocomplete="off" id="descricao">
+            <input type="text" placeholder="Adicione uma descrição" autocomplete="off" id="descricao">
             <label for="responsavel">Responsável:</label>
-            <input type="text" placeholder="adicione um responsável" autocomplete="off"id="responsavel">
+            <input type="text" placeholder="Adicione um responsável" autocomplete="off"id="responsavel">
             <label for="nivel">Nível:</label>
             <select id="nivel">
                 <option value="1">1</option>
@@ -33,7 +33,6 @@
                 <option value="nova">Nova</option>
                 <option value="em andamento">Em andamento</option>
                 <option value="pendente">Pendente</option>
-                <option value="cancelada">Cancelada</option>
                 <option value="resolvida">Resolvida</option>
             </select>
         
