@@ -1,8 +1,16 @@
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: monospace;
+  font-family: 'Roboto', sans-serif;
   background-color: #f2f2f2;
 }
 
+/* Login Form */
 .login-wrapper {
   background-color: #fff;
   border-radius: 10px;
@@ -13,35 +21,48 @@ body {
   text-align: center;
 }
 
-h1 {
+.login-wrapper h1 {
   color: #333;
   font-size: 36px;
   margin-top: 0;
 }
 
-form {
+.login-wrapper form {
   display: flex;
   flex-direction: column;
 }
 
-label {
+.login-wrapper label {
   color: #666;
-  font-size: 18px;
+  font-size: 15px;
   margin-bottom: 5px;
+  display: flex;
+  align-items: center;
 }
 
-input[type="text"],
-input[type="password"],
-input[type='email'] {
+.login-wrapper input[type="text"],
+.login-wrapper input[type="password"],
+.login-wrapper input[type='email'] {
   border: none;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(26, 182, 104, 0.3);
   font-size: 16px;
-  padding: 10px;
+  padding: 10px 10px 10px 40px;
   margin-bottom: 10px;
+  background-size: 20px 20px;
+  background-position: 10px center;
+  background-repeat: no-repeat;
 }
 
-button {
+.login-wrapper input[type="text"] {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/149/149071.png');
+}
+
+.login-wrapper input[type="password"] {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/891/891399.png');
+}
+
+.login-wrapper button[type="submit"] {
   background-color: #3680c5;
   border: none;
   border-radius: 5px;
@@ -51,22 +72,28 @@ button {
   font-size: 16px;
   padding: 10px;
   transition: background-color 0.2s;
-  font-family: monospace;
+  font-family: 'Roboto', sans-serif;
 }
 
-button:hover {
+.login-wrapper button[type="submit"]:hover {
   background-color: #85afcc;
 }
 
-input:focus,
-textarea:focus,
-button:focus,
-select:focus {
+.login-wrapper input:focus,
+.login-wrapper textarea:focus,
+.login-wrapper button:focus,
+.login-wrapper select:focus {
   outline: none;
 }
 
-a{
+.login-wrapper a{
   text-decoration: none;
   font-family: monospace;
   color: #3680c5; 
+  font-size: 15px;
+}
+
+
+.login-wrapper input[type="email"] {
+  background-image: url('../images/mail.png');
 }
