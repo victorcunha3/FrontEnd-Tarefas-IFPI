@@ -4,7 +4,7 @@ const passwordInput = document.querySelector('#password');
 
 function signIn(event) {
     event.preventDefault();
-    const API_URL = 'http://127.0.0.1:8000/api/token/';
+    const API_URL = 'https://tarefas-sessy.onrender.com/api/token/';
     const user = {
         username: usernameInput.value,
         password: passwordInput.value
