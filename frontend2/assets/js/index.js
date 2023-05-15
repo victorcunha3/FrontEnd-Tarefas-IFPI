@@ -78,7 +78,7 @@ async function mostrarTarefas() {
     // Criando um botão de apagar para cada tarefa
     const botaoDeletar = document.createElement('button');
     botaoDeletar.innerText = 'Excluir';
-    botaoDeletar.classList.add('botao-js');//adicionando essa classe para estilizar o botao das linhas
+    botaoDeletar.classList.add('botao-main');//adicionando essa classe para estilizar o botao das linhas
     botaoDeletar.addEventListener('click', () => {
       apagarTarefa(tarefa_atual.id);
     });
@@ -87,7 +87,7 @@ async function mostrarTarefas() {
 
     const botaoAtualizar = document.createElement('button');
     botaoAtualizar.innerText = 'Atualizar';
-    botaoAtualizar.classList.add('botao-js');//adicionando essa classe para estilizar o botao das linhas
+    botaoAtualizar.classList.add('botao-main');//adicionando essa classe para estilizar o botao das linhas
     botaoAtualizar.addEventListener('click',()=>{
       atualizarTarefas(tarefa_atual.id)
     })
@@ -176,7 +176,7 @@ async function atualizarTarefas(id) {
 
   const ConfirmarUpdate = document.createElement("button");
   ConfirmarUpdate.innerText = "Confirmar";
-  ConfirmarUpdate.classList.add("form__submit");//classe para o css
+  ConfirmarUpdate.classList.add("botao-main");//classe para o css
   form.appendChild(ConfirmarUpdate);
 
   // exibindo o formulário na tela
