@@ -98,3 +98,28 @@ body {
 .login-wrapper input[type="email"] {
   background-image: url('../images/icons8-nova-mensagem-50.png');
 }
+
+
+.animated-word{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.letra{
+  transform: 10.1s;
+  transform: translateX(0);
+  cursor: grab;
+  color: #fff;
+  font-size: 40px;
+  font-family:sans-serif;
+}
+
+.letra:hover{
+  transform: translateY(-1rem);
+  background: -webkit-linear-gradient(120deg,hsl(37, 56%, 53%),
+ hsl(56,100%,50%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
